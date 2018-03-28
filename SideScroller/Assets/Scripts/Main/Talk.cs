@@ -28,11 +28,13 @@ public class Talk : MonoBehaviour {
         {
             zone.SetActive(true);                                   //reveal text box
             player.GetComponent<PlayerMove>().enabled = false;      //stop player controller
+            Time.timeScale = 0;
         }
         else                        //if not currently in text event
         {
             zone.SetActive(false);                                  //hide text box
             player.GetComponent<PlayerMove>().enabled = true;       //reactivate player controller
+            Time.timeScale = 1;
         }
 
         if (Input.GetKeyDown(KeyCode.Return) )                      //check for player input for text event progression
