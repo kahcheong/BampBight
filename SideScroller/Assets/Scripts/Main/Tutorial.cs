@@ -9,8 +9,11 @@ public class Tutorial : MonoBehaviour {
     public bool DUsed = false;
     public bool FUsed = false;
     public bool SpaceUsed = false;        
-    public bool ShiftUsed = false;       
-           
+    public bool ShiftUsed = false;
+    public bool tut1 = false;
+    public bool tut2 = false;
+    public bool tut3 = false;
+
 
     public Image AIcon;           
     public Image DIcon;
@@ -72,17 +75,17 @@ public class Tutorial : MonoBehaviour {
             StartCoroutine(Fader(DIcon));
             DUsed = true;
         }
-        if (!FUsed && Input.GetKeyDown(KeyCode.F))
+        if (!FUsed && Input.GetKeyDown(KeyCode.F) && tut3)
         {
             StartCoroutine(Fader(FIcon));
             FUsed = true;
         }
-        if (!SpaceUsed && Input.GetKeyDown(KeyCode.Space))
+        if (!SpaceUsed && Input.GetKeyDown(KeyCode.Space) && tut1)
         {
             StartCoroutine(Fader(SpaceIcon));
             SpaceUsed = true;
         }
-        if (!ShiftUsed && Input.GetKeyDown(KeyCode.LeftShift))
+        if (!ShiftUsed && Input.GetKeyDown(KeyCode.LeftShift) && tut2)
         {
             StartCoroutine(Fader(ShiftIcon));
             ShiftUsed = true;
@@ -100,6 +103,7 @@ public class Tutorial : MonoBehaviour {
             SpaceC = SpaceIcon.color;
             SpaceC.a = 1f;
             SpaceIcon.color = SpaceC;
+            tut1 = true;
 
             Destroy(other.gameObject);
         }
@@ -110,6 +114,7 @@ public class Tutorial : MonoBehaviour {
             ShiftC = ShiftIcon.color;
             ShiftC.a = 1f;
             ShiftIcon.color = ShiftC;
+            tut2 = true;
 
             Destroy(other.gameObject);
         }
@@ -120,6 +125,7 @@ public class Tutorial : MonoBehaviour {
             FC = FIcon.color;
             FC.a = 1f;
             FIcon.color = FC;
+            tut3 = true;
 
             Destroy(other.gameObject);
         }
