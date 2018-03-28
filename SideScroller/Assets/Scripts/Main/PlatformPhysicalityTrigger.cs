@@ -7,11 +7,16 @@ public class PlatformPhysicalityTrigger : MonoBehaviour
     public GameObject[] obstacles;    //The list of obstacles assigned to this crystal
     public void OnEnable()
     {
-        //Debug.Log("We inside the cone");    //Dev check
-        for (int i = 0; i < obstacles.Length; i++)
+        if (obstacles[0] != null)
         {
-            obstacles[i].GetComponent<BoxCollider>().enabled = true;
+            //Debug.Log("We inside the cone");    //Dev check
+            for (int i = 0; i < obstacles.Length; i++)
+            {
+                obstacles[i].GetComponent<BoxCollider>().enabled = true;
+            }
         }
+        
+        
     }
 
     private void OnTriggerEnter(Collider other)    //Checks when an obstacles enters the cone

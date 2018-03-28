@@ -22,7 +22,7 @@ public class PullPlatform : MonoBehaviour
 		if(returning)	//Checks if the platform is moving back
 		{
 			activated = false;	//No longer moving to target
-			transform.position = Vector3.MoveTowards(this.transform.position, home.transform.position, speed);	//Moves towards home
+			if (home != null) transform.position = Vector3.MoveTowards(this.transform.position, home.transform.position, speed);	//Moves towards home
 		}
 	}
 }
