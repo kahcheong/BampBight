@@ -8,6 +8,7 @@ public class Vivi : MonoBehaviour
     public GameObject player;            //The player gameObject
     public float juice = 100f;           //The default player starting glow juice level
     public GameObject lantern;           //The object Vivi will return to(Should be Pod's lantern on his model)
+    public GameObject JUICE;            //trail
 
     [SerializeField]
     private PlayerMove PM;               //The PlayerMotor
@@ -66,6 +67,7 @@ public class Vivi : MonoBehaviour
         if (flying  ) //free flying for vivi + disables player movement
         {
             returned = false;    //Vivi has not returned
+            JUICE.GetComponent<ParticleSystem>().emissionRate = 10;
             Rigidbody oof = player.GetComponent<Rigidbody>();
             oof.velocity = STOP;    //Stop the player moving
             CM.MoveTo(STOP, 0f, float.MaxValue, false);
@@ -87,7 +89,7 @@ public class Vivi : MonoBehaviour
             if (rb.velocity.y > maxSpeed) rb.velocity = new Vector3(rb.velocity.x, maxSpeed, 0);     //but we restrict moving
             if (rb.velocity.y < -maxSpeed) rb.velocity = new Vector3(rb.velocity.x, -maxSpeed, 0);   //to X and Y, no Z
 
-            juice -= 1.0f/3.0f; //Detract juice while Vivi flies
+            juice -= 1.0f/6.0f; //Detract juice while Vivi flies
         }
         else if (returned == false) //if vivi is far away, make her comeback and waits for her to return before allowing player to mvoe again
         {
@@ -97,6 +99,7 @@ public class Vivi : MonoBehaviour
         }
         else if (returned == true) //vivi tracked to player after returning
         {
+            JUICE.GetComponent<ParticleSystem>().emissionRate = 0;
             rb.velocity = new Vector3(0, 0, 0);    //Stop Vivi in Lantern
             PM.enabled = true;                     
             transform.position = RETURN;           

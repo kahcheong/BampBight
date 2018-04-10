@@ -10,5 +10,6 @@ public class dieHole : MonoBehaviour
     private void OnCollisionEnter(Collision col)
     {
         player.transform.position = spawnLedge.transform.position;    //Moves the player to the respawnPoint
+        
     }
 }
