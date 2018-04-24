@@ -255,7 +255,7 @@
           <e p="JuiceWobble.cs" t="Include" />
           <e p="MagniGlass.cs" t="Include" />
           <e p="Minimapbehaviour.cs" t="Include" />
-          <e p="MinimapCheckpointTrigger.cs" t="Include" />
+          <e p="MinimapTriggers.cs" t="Include" />
           <e p="moth.cs" t="Include" />
           <e p="MushroomActivate.cs" t="Include" />
           <e p="pause" t="Include">
