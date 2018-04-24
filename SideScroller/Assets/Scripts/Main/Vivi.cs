@@ -34,7 +34,7 @@ public class Vivi : MonoBehaviour
 
     private float flybackTime = 1f;      //Time it takes Vivi to fly back to Lantern
     public bool returned;                //Whether or not Vivi is back at lantern
-    public AudioSource viviStartScream;   //vivi activation sound effect
+    //public AudioSource viviStartScream;   //vivi activation sound effect
     public AudioSource viviScreaming;    //vivi's travel sound effect
     private bool screaming = false;      //whether the travel sound has been activated or not
 
@@ -97,18 +97,23 @@ public class Vivi : MonoBehaviour
             juice -= 1.0f/6.0f; //Detract juice while Vivi flies
             if (!screaming)
             {
-                viviStartScream.Play();
+                //viviStartScream.Play();
                 viviScreaming.Play();
                 AudioFadeIn.FadeIn(viviScreaming,0.5f,1);
                 screaming = true;
             }
 
         }
-        else if (returned == false) //if vivi is far away, make her comeback and waits for her to return before allowing player to mvoe again
+        else if (returned == false) //if vivi is far away, make her comeback and waits for her to return before allowing player to move again
         {
             rb.velocity = new Vector3(0, 0, 0);
             flyback();
             StartCoroutine(flybackWait());
+            if (screaming)
+            {
+                AudioFadeOut.FadeOut(viviScreaming, 0.2f);
+                screaming = false;
+            }
         }
         else if (returned == true) //vivi tracked to player after returning
         {
@@ -127,11 +132,7 @@ public class Vivi : MonoBehaviour
                 juice -= 1.0f;
             }
 
-            if (screaming)
-            {
-                AudioFadeOut.FadeOut(viviScreaming, 0.5f);
-                screaming = false;
-            }
+            
         }
     }
 

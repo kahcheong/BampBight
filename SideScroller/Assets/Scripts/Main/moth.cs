@@ -41,7 +41,7 @@ public class moth : MonoBehaviour
             source.GetComponent<ParticleSystem>().emissionRate -= 5;  
             if (!startSucc)
             {
-                AudioFadeOut.FadeOut(grapefruit, 0.5f);
+                AudioFadeOut.FadeOut(grapefruit, 0.2f);
                 startSucc = true;
             }
         }
