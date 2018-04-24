@@ -8,6 +8,8 @@ public class moth : MonoBehaviour
     private float dist;
     public Hover move;
     public succ soul;
+    public AudioSource grapefruit;
+    private bool startSucc = true;
 
     private float x, y;
 
@@ -24,13 +26,24 @@ public class moth : MonoBehaviour
 
         if (dist < 5f)
         {
+            if (startSucc)
+            {
+                grapefruit.Play();
+                AudioFadeIn.FadeIn(grapefruit, 0.5f, 1);
+                startSucc = false;
+            }
             soul.moth = gameObject;
             source.GetComponent<ParticleSystem>().emissionRate = 100;
             if (vivi.GetComponent<Vivi>().juice > 0) vivi.GetComponent<Vivi>().juice -= 1.0f / 6.0f; ;
         }
         else
         { 
-            source.GetComponent<ParticleSystem>().emissionRate -= 5;    
+            source.GetComponent<ParticleSystem>().emissionRate -= 5;  
+            if (!startSucc)
+            {
+                AudioFadeOut.FadeOut(grapefruit, 0.5f);
+                startSucc = true;
+            }
         }
     }
 
