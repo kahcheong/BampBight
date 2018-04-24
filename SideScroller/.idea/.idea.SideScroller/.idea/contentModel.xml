@@ -251,6 +251,7 @@
           <e p="GlowFruitPickup.cs" t="Include" />
           <e p="GreenGlassPickup.cs" t="Include" />
           <e p="Hover.cs" t="Include" />
+          <e p="IconFollow.cs" t="Include" />
           <e p="juiceLevel.cs" t="Include" />
           <e p="JuiceWobble.cs" t="Include" />
           <e p="MagniGlass.cs" t="Include" />
@@ -270,6 +271,10 @@
           <e p="Respawn.cs" t="Include" />
           <e p="RespawnZone.cs" t="Include" />
           <e p="SelfDestruct.cs" t="Include" />
+          <e p="static sounds" t="Include">
+            <e p="AudioFadeIn.cs" t="Include" />
+            <e p="AudioFadeOut.cs" t="Include" />
+          </e>
           <e p="succ.cs" t="Include" />
           <e p="Talk.cs" t="Include" />
           <e p="TalkLoc.cs" t="Include" />
