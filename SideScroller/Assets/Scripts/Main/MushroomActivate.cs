@@ -15,13 +15,16 @@ public class MushroomActivate : MonoBehaviour {
 
     private void OnTriggerEnter(Collider other)
     {
-        lights.active = true;
-        particle.active = true;
-        if(iSNotPlayed)
-        { on.Play();
-            iSNotPlayed = false;
+        if (other.tag == "Player" || other.tag == "Vivi")
+        {
+            lights.active = true;
+            particle.active = true;
+            if (iSNotPlayed)
+            {
+                on.Play();
+                iSNotPlayed = false;
+            }
         }
-       
 
     }
 }
