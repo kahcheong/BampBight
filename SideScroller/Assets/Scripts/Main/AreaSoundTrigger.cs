@@ -28,7 +28,7 @@ public class AreaSoundTrigger : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "Player" && !beenTriggered)
+        if ((other.tag == "Player" || other.tag == "Vivi") && !beenTriggered)
         {
             mainAudioSource.clip = toPlay;    //Switch to the target audio
             mainAudioSource.Play();            //Play the target audio

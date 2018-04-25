@@ -4,13 +4,12 @@
     <list default="true" id="b2f37acb-50ea-40bc-9047-2b72de7e66c2" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.SideScroller/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SideScroller/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Main/AreaSoundTrigger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Main/AreaSoundTrigger.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/CurrentLayout.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/Library/CurrentLayout.dwlt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll.mdb" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll.mdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/assetDatabase3" beforeDir="false" afterPath="$PROJECT_DIR$/Library/assetDatabase3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/expandedItems" beforeDir="false" afterPath="$PROJECT_DIR$/Library/expandedItems" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/metadata/11/113121266019d7f4bbf2280e2bc3a688" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/11/113121266019d7f4bbf2280e2bc3a688" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/metadata/cb/cb6e3ea66ec21dc409d8e8ece3b84bb7" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/cb/cb6e3ea66ec21dc409d8e8ece3b84bb7" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/30/30a7754a24ad91b4eb4c5e8c95b24f48" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/30/30a7754a24ad91b4eb4c5e8c95b24f48" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -35,11 +34,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TonemappingEditor.cs" pinned="false" current-in-tab="true">
+      <file leaf-file-name="TonemappingEditor.cs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Volumetric Lights/Editor/ImageEffects/TonemappingEditor.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="507">
-              <caret line="58" column="87" lean-forward="true" selection-start-line="58" selection-start-column="87" selection-end-line="58" selection-end-column="87" />
+            <state relative-caret-position="840">
+              <caret line="58" column="87" selection-start-line="58" selection-start-column="87" selection-end-line="58" selection-end-column="87" />
               <folding>
                 <marker date="1524600171237" expanded="false" signature="6:51" ph="..." />
                 <marker date="1524600171237" expanded="true" signature="95:4510" ph="{...}" />
@@ -56,6 +55,22 @@
                 <marker date="1524600171237" expanded="true" signature="2905:3040" ph="{...}" />
                 <marker date="1524600171237" expanded="true" signature="3124:3752" ph="{...}" />
                 <marker date="1524600171237" expanded="true" signature="3845:4335" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AreaSoundTrigger.cs" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Main/AreaSoundTrigger.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+              <folding>
+                <marker date="1524616083267" expanded="false" signature="6:113" ph="..." />
+                <marker date="1524616083267" expanded="true" signature="160:1186" ph="{...}" />
+                <marker date="1524616083267" expanded="true" signature="829:1184" ph="{...}" />
+                <marker date="1524616083267" expanded="true" signature="913:1178" ph="{...}" />
+                <marker date="1524616083267" expanded="true" signature="1102:1168" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -90,6 +105,7 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Main/MinimapTriggers.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Main/Minimapbehaviour.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Main/IconFollow.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Main/AreaSoundTrigger.cs" />
       </list>
     </option>
   </component>
@@ -134,11 +150,11 @@
         </subPane>
         <option name="show-hidden-items" value="false" />
       </pane>
+      <pane id="Scratches" />
       <pane id="SolutionExplorer">
         <option name="show-file-system" value="false" />
         <option name="show-all-items" value="false" />
       </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -176,11 +192,12 @@
       <workItem from="1524601310843" duration="722000" />
       <workItem from="1524602574743" duration="9695000" />
       <workItem from="1524614335611" duration="15000" />
+      <workItem from="1524616044705" duration="65000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10432000" />
+    <option name="totallyTimeSpent" value="10497000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -202,7 +219,7 @@
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2553305" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25799572" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Unity" order="8" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -231,7 +248,7 @@
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Main/IconFollow.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
           <folding>
             <marker date="1524612042432" expanded="false" signature="6:78" ph="..." />
             <marker date="1524612042432" expanded="true" signature="119:263" ph="{...}" />
@@ -240,8 +257,41 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Main/TalkLoc.cs">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/Assets/Volumetric Lights/Editor/ImageEffects/TonemappingEditor.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="840">
+          <caret line="58" column="87" lean-forward="true" selection-start-line="58" selection-start-column="87" selection-end-line="58" selection-end-column="87" />
+          <folding>
+            <marker date="1524600171237" expanded="false" signature="6:51" ph="..." />
+            <marker date="1524600171237" expanded="true" signature="95:4510" ph="{...}" />
+            <marker date="1524600171237" expanded="true" signature="175:4508" ph="{...}" />
+            <marker date="1524600171237" expanded="true" signature="602:1110" ph="{...}" />
+            <marker date="1524600171237" expanded="true" signature="1160:4502" ph="{...}" />
+            <marker date="1524600171237" expanded="true" signature="1389:1859" ph="{...}" />
+            <marker date="1524600171237" expanded="true" signature="1421:1579" ph="{...}" />
+            <marker date="1524600171237" expanded="true" signature="1656:1845" ph="{...}" />
+            <marker date="1524600171237" expanded="true" signature="2025:2178" ph="{...}" />
+            <marker date="1524600171237" expanded="true" signature="2260:2395" ph="{...}" />
+            <marker date="1524600171237" expanded="true" signature="2468:2603" ph="{...}" />
+            <marker date="1524600171237" expanded="true" signature="2683:2818" ph="{...}" />
+            <marker date="1524600171237" expanded="true" signature="2905:3040" ph="{...}" />
+            <marker date="1524600171237" expanded="true" signature="3124:3752" ph="{...}" />
+            <marker date="1524600171237" expanded="true" signature="3845:4335" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Main/IconFollow.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+          <folding>
+            <marker date="1524612042432" expanded="false" signature="6:78" ph="..." />
+            <marker date="1524612042432" expanded="true" signature="119:263" ph="{...}" />
+            <marker date="1524612042432" expanded="true" signature="170:261" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Main/GreenGlassPickup.cs">
       <provider selected="true" editor-type-id="text-editor">
@@ -264,9 +314,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Main/TalkLoc.cs">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Main/GreenGlassPickup.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -278,16 +325,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="1" column="21" selection-start-line="1" selection-start-column="21" selection-end-line="1" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Main/RespawnZone.cs">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Main/AreaSoundTrigger.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="30" column="51" selection-start-line="30" selection-start-column="34" selection-end-line="30" selection-end-column="51" />
         </state>
       </provider>
     </entry>
@@ -320,8 +357,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Volumetric Lights/Editor/ImageEffects/TonemappingEditor.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="507">
-          <caret line="58" column="87" lean-forward="true" selection-start-line="58" selection-start-column="87" selection-end-line="58" selection-end-column="87" />
+        <state relative-caret-position="840">
+          <caret line="58" column="87" selection-start-line="58" selection-start-column="87" selection-end-line="58" selection-end-column="87" />
           <folding>
             <marker date="1524600171237" expanded="false" signature="6:51" ph="..." />
             <marker date="1524600171237" expanded="true" signature="95:4510" ph="{...}" />
@@ -338,6 +375,20 @@
             <marker date="1524600171237" expanded="true" signature="2905:3040" ph="{...}" />
             <marker date="1524600171237" expanded="true" signature="3124:3752" ph="{...}" />
             <marker date="1524600171237" expanded="true" signature="3845:4335" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Main/AreaSoundTrigger.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+          <folding>
+            <marker date="1524616083267" expanded="false" signature="6:113" ph="..." />
+            <marker date="1524616083267" expanded="true" signature="160:1186" ph="{...}" />
+            <marker date="1524616083267" expanded="true" signature="829:1184" ph="{...}" />
+            <marker date="1524616083267" expanded="true" signature="913:1178" ph="{...}" />
+            <marker date="1524616083267" expanded="true" signature="1102:1168" ph="{...}" />
           </folding>
         </state>
       </provider>
