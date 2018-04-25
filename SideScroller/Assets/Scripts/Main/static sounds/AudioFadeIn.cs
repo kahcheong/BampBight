@@ -10,7 +10,7 @@ public static class AudioFadeIn
 
         while (audioSource.volume < maxVolume)
         {
-            audioSource.volume += 0 * Time.deltaTime / FadeTime;
+            audioSource.volume += maxVolume * Time.deltaTime / FadeTime;
 
             yield return null;
         }

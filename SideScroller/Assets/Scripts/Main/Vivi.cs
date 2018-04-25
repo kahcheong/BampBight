@@ -35,7 +35,7 @@ public class Vivi : MonoBehaviour
     private float flybackTime = 1f;      //Time it takes Vivi to fly back to Lantern
     public bool returned;                //Whether or not Vivi is back at lantern
     //public AudioSource viviStartScream;   //vivi activation sound effect
-    //public AudioSource viviScreaming;    //vivi's travel sound effect
+    public AudioSource viviScreaming;    //vivi's travel sound effect
     private bool screaming = false;      //whether the travel sound has been activated or not
 
     private void Start()
@@ -72,7 +72,7 @@ public class Vivi : MonoBehaviour
         {
             returned = false;    //Vivi has not returned
             JUICE.GetComponent<ParticleSystem>().emissionRate = 10;
-            Trail.active = true;
+            Trail.GetComponent<TrailRenderer>().time = 2;
             Rigidbody oof = player.GetComponent<Rigidbody>();
             oof.velocity = STOP;    //Stop the player moving
             CM.MoveTo(STOP, 0f, float.MaxValue, false);
@@ -95,23 +95,24 @@ public class Vivi : MonoBehaviour
             if (rb.velocity.y < -maxSpeed) rb.velocity = new Vector3(rb.velocity.x, -maxSpeed, 0);   //to X and Y, no Z
 
             juice -= 1.0f/6.0f; //Detract juice while Vivi flies
-            /*if (!screaming)
+            if (!screaming)
             {
                 //viviStartScream.Play();
                 viviScreaming.Play();
-                AudioFadeIn.FadeIn(viviScreaming,0.5f,1);
+                //StartCoroutine( AudioFadeIn.FadeIn(viviScreaming,0.01f,1));
+                viviScreaming.Play();
                 screaming = true;
-            }*/
+            }
 
         }
         else if (returned == false) //if vivi is far away, make her comeback and waits for her to return before allowing player to move again
         {
-            /*if (screaming)
+            if (screaming)
             {
-                AudioFadeOut.FadeOut(viviScreaming, 0.2f);
+                StartCoroutine( AudioFadeOut.FadeOut(viviScreaming, 0.5f));
                 screaming = false;
-            }*/
-
+            }
+            Trail.GetComponent<TrailRenderer>().time = 0.3f;
             rb.velocity = new Vector3(0, 0, 0);
             flyback();
             StartCoroutine(flybackWait());
@@ -120,11 +121,13 @@ public class Vivi : MonoBehaviour
         else if (returned == true) //vivi tracked to player after returning
         {
             JUICE.GetComponent<ParticleSystem>().emissionRate = 0;
-            Trail.active = false; 
+            Trail.GetComponent<TrailRenderer>().time = 0f;
             rb.velocity = new Vector3(0, 0, 0);    //Stop Vivi in Lantern
             PM.enabled = true;                     
-            transform.position = RETURN;           
-            
+            transform.position = RETURN;
+
+            //if (screaming) viviScreaming.Stop();
+
             if (juice < maxJuice &&  recharge.Contains(true))
             {
                 juice += 1.0f;

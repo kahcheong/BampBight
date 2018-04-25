@@ -11,6 +11,8 @@ public class moth : MonoBehaviour
     public AudioSource grapefruit;
     private bool startSucc = true;
 
+    public GameObject juice2;
+
     private float x, y;
 
     private void Start()
@@ -29,19 +31,22 @@ public class moth : MonoBehaviour
             if (startSucc)
             {
                 grapefruit.Play();
-                AudioFadeIn.FadeIn(grapefruit, 0.5f, 1);
+                //StartCoroutine( AudioFadeIn.FadeIn(grapefruit, 0.2f, 1));
+                grapefruit.Play();
                 startSucc = false;
             }
             soul.moth = gameObject;
             source.GetComponent<ParticleSystem>().emissionRate = 100;
-            if (vivi.GetComponent<Vivi>().juice > 0) vivi.GetComponent<Vivi>().juice -= 1.0f / 6.0f; ;
+            if (vivi.GetComponent<Vivi>().juice > 0) vivi.GetComponent<Vivi>().juice -= 1.0f / 6.0f;
+
         }
         else
-        { 
+        {
+            
             source.GetComponent<ParticleSystem>().emissionRate -= 5;  
             if (!startSucc)
             {
-                AudioFadeOut.FadeOut(grapefruit, 0.2f);
+                StartCoroutine( AudioFadeOut.FadeOut(grapefruit, 0.2f));
                 startSucc = true;
             }
         }
